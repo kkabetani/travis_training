@@ -4,3 +4,7 @@ rvm:
 
 before_script:
   - env|grep TRAVIS
+  - ls -la ~/
+  - git clone -q https://github.com/$TRAVIS_REPO_SLUG.git _build
+  - pushd _build
+  - popd
